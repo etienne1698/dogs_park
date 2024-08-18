@@ -10,7 +10,7 @@ export default {
       },
       margin: {
         "page": "1rem"
-      }
+      },
     },
     fontSize: {
       h1: [
