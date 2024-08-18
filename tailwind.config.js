@@ -16,6 +16,13 @@ export default {
           fontWeight: "700",
         },
       ],
+      button: [
+        "16px",
+        {
+          lineHeight: "24px",
+          fontWeight: "500",
+        },
+      ],
     },
   },
   plugins: [],
