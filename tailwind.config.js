@@ -6,7 +6,11 @@ export default {
       colors: {
         "primary": "#41245C",
         "secondary": "#EBA059",
+        "grey":"#F1F1F1"
       },
+      margin: {
+        "page": "1rem"
+      }
     },
     fontSize: {
       h1: [
