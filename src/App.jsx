@@ -8,6 +8,7 @@ import SignIn from "./pages/SignIn";
 import PasswordForgot from "./pages/PasswordForgot";
 import EmailCheck from "./pages/EmailCheck";
 import PasswordReset from "./pages/PasswordReset";
+import Welcome from "./pages/Welcome";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="passwordforgot" element={<PasswordForgot />} />
         <Route path="emailcheck" element={<EmailCheck />} />
         <Route path="passwordreset" element={<PasswordReset />} />
+        <Route path="/welcome" element={<Welcome/>} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
