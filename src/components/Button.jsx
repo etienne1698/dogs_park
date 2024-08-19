@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function Button({txt, variant="base", className}) {
 
@@ -7,7 +6,7 @@ export default function Button({txt, variant="base", className}) {
   if (variant == "base"){
     classBtn = "bg-primary text-white hover:bg-secondary hover:text-primary"
   } else if (variant == "tertiary") {
-    classBtn = "bg-white text-primary border border-solid border-primary"
+    classBtn = "bg-white text-primary border border-solid border-primary focus:bg-primary focus:text-white"
   }
 
   

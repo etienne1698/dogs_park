@@ -4,16 +4,25 @@ import Contact from "./pages/Contact";
 import Layout from "./pages/Layout"
 import SignUp from "./pages/SignUp";
 import Onboarding from "./pages/Onboarding";
+import SignIn from "./pages/SignIn";
+import PasswordForgot from "./pages/PasswordForgot";
+import EmailCheck from "./pages/EmailCheck";
+import PasswordReset from "./pages/PasswordReset";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="passwordforgot" element={<PasswordForgot />} />
+        <Route path="emailcheck" element={<EmailCheck />} />
+        <Route path="passwordreset" element={<PasswordReset />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="signup" element={<SignUp />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

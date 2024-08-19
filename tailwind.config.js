@@ -6,10 +6,13 @@ export default {
       colors: {
         "primary": "#41245C",
         "secondary": "#EBA059",
-        "grey":"#F1F1F1"
+        "grey":"#F1F1F1",
+        "greyText": "#7C7C7C",
+        "orangeLink":"#EBA059"
       },
       margin: {
-        "page": "1rem"
+        "pageX": "1rem",
+        "pageY": "5rem"
       },
     },
     fontSize: {
