@@ -10,8 +10,8 @@ function TextField({label, placeholder, id, type, oeil}) {
         placeholder={placeholder}
         required
         minLength="4"
-        maxLength="8"
-        size="10"
+        maxLength="15"
+        size=""
         className="bg-transparent outline-none"
       />
       <div className='pr-5'>{oeil}</div>
