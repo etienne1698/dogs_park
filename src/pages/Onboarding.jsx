@@ -10,14 +10,15 @@ import Step from "../assets/img/onboarding/icones/footer_btn.png";
 export default function Onboarding() {
 	const [currentStep, setCurrentStep] = useState(0);
 	const steps = [
-    {
-      title: (
-        <>
-          Find a <span className="text-secondary">Dog Park</span> near you!
-        </>
-      ),
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    },
+		{
+			title: (
+				<>
+					Find a <span className="text-secondary">Dog Park</span> near you!
+				</>
+			),
+			description:
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+		},
 		{
 			title: "Connect with Dog Lovers",
 			description:
@@ -34,7 +35,7 @@ export default function Onboarding() {
 		if (currentStep < steps.length - 1) {
 			setCurrentStep(currentStep + 1);
 		} else {
-			console.log("Onboarding terminé");
+			console.log("Finish go to welcome page");
 		}
 	};
 
@@ -59,6 +60,8 @@ export default function Onboarding() {
 			<Button
 				txt={currentStep < steps.length - 2 ? "Let's go" : "Next"}
 				onClick={handleNextBtn}
+				variant="base"
+				className="mx-auto w-[218px] mt-5"
 			/>
 			<div className="mt-5">
 				<img src={Step} alt="step one" />
