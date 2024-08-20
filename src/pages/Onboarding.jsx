@@ -1,14 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Button from "../components/Button";
 import Paw from "../assets/img/paw.png";
 import Back from "../assets/img/onboarding/background.png";
 import Cloud from "../assets/img/onboarding/cloud.png";
 import Dog from "../assets/img/onboarding/dogs.png";
-import Step from "../assets/img/onboarding/icones/footer_btn.png";
+import Step1 from "../assets/img/onboarding/icones/footer_btn.png";
+import Step2 from "../assets/img/onboarding/icones/footer_btn2.png";
+import Step3 from "../assets/img/onboarding/icones/footer_btn3.png";
 
 export default function Onboarding() {
 	const [currentStep, setCurrentStep] = useState(0);
+	const navigate = useNavigate();
+
 	const steps = [
 		{
 			title: (
@@ -34,8 +39,8 @@ export default function Onboarding() {
 	const handleNextBtn = () => {
 		if (currentStep < steps.length - 1) {
 			setCurrentStep(currentStep + 1);
-		} else {
-			console.log("Finish go to welcome page");
+		} else if (currentStep === 2) {
+			navigate("/welcome");
 		}
 	};
 
@@ -61,10 +66,15 @@ export default function Onboarding() {
 				txt={currentStep < steps.length - 2 ? "Let's go" : "Next"}
 				onClick={handleNextBtn}
 				variant="base"
-				className="mx-auto w-[218px] mt-5"
+				className={
+					currentStep === 2 ? "w-24 h-24 py-0 px-0" : "mx-auto w-[218px] mt-5"
+				}
 			/>
 			<div className="mt-5">
-				<img src={Step} alt="step one" />
+				<img
+					src={currentStep === 0 ? Step1 : currentStep === 1 ? Step2 : Step3}
+					alt="steps"
+				/>
 			</div>
 		</div>
 	);
