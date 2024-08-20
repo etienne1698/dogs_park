@@ -9,12 +9,14 @@ import PasswordForgot from "./pages/PasswordForgot";
 import EmailCheck from "./pages/EmailCheck";
 import PasswordReset from "./pages/PasswordReset";
 import Welcome from "./pages/Welcome";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="signin" element={<SignIn />} />
         <Route path="passwordforgot" element={<PasswordForgot />} />
