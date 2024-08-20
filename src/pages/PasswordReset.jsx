@@ -4,7 +4,8 @@ import Button from '../components/Button';
 
 function PasswordReset() {
   return (
-    <div className="mx-pageX grid gap-3 my-pageY">
+    <div className="flex flex-col items-center min-h-screen px-4 mt-10">
+      <div className="max-w-md w-full">
     <AuthHeader txtHeader="Reset Password" title="Reset Password" txtIntro={<>Your new password must be different from<br/>
 previously used password.</>}/>
    
@@ -21,8 +22,9 @@ previously used password.</>}/>
       placeholder="*******"
     />
     
-    <Button txt="Update Password" variant="base" className="mx-auto w-[231px] mt-[100px]"/>
+    <Button txt="Update Password" variant="base" className="flex justify-center mx-auto w-[231px] mt-[100px]"/>
     
+    </div> 
   </div>
   )
 }
