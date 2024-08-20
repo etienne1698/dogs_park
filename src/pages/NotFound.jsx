@@ -14,10 +14,11 @@ export default function NotFound() {
 			<div className="flex flex-col justify-center items-center text-center h-screen gap-20">
 				<div className="relative">
 					<img src={Back} alt="Background"></img>
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[100%]">
+						<img src={Dog} alt="Dog"></img>
+					</div>					
 				</div>
-				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%]">
-					<img src={Dog} alt="Dog"></img>
-				</div>
+
 				<div className="flex flex-col items-center gap-6">
 					<h1 className="font-poppins text-white font-bold text-3xl">
 						Page Not Found :(
