@@ -66,9 +66,7 @@ export default function Onboarding() {
 				txt={currentStep < steps.length - 2 ? "Let's go" : "Next"}
 				onClick={handleNextBtn}
 				variant="base"
-				className={
-					currentStep === 2 ? "w-24 h-24 py-0 px-0" : "mx-auto w-[218px] mt-5"
-				}
+				className={currentStep === 2 ? "w-24 h-24" : "mx-auto w-[218px] mt-5"}
 			/>
 			<div className="mt-5">
 				<img

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Button({ txt, variant = "base", className, onClick }) {
 	let classBtn = "";
@@ -14,12 +14,15 @@ export default function Button({ txt, variant = "base", className, onClick }) {
 		classBtn = "bg-white text-primary hover:bg-secondary";
 	}
 
+	const paddingClasses =
+		className && className.includes("w-24 h-24") ? "px-0 py-0" : "px-12 py-4";
 	return (
 		<button
 			onClick={onClick}
 			className={
 				classBtn +
-				"  px-12 py-4 text-button rounded-full font-poppins " +
+				paddingClasses +
+				" text-button rounded-full font-poppins " +
 				className
 			}
 		>
