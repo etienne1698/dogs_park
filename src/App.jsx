@@ -10,6 +10,7 @@ import EmailCheck from "./pages/EmailCheck";
 import PasswordReset from "./pages/PasswordReset";
 import Welcome from "./pages/Welcome";
 import NotFound from "./pages/NotFound";
+import Description from "./pages/Description";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="passwordforgot" element={<PasswordForgot />} />
         <Route path="emailcheck" element={<EmailCheck />} />
         <Route path="passwordreset" element={<PasswordReset />} />
+        <Route path="/description" element={<Description />} />
         <Route path="/welcome" element={<Welcome/>} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
