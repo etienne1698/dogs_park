@@ -13,8 +13,8 @@ export default function FooterMenu() {
 	];
 
 	return (
-		<div className="flex justify-center items-end min-h-screen">
-			<div className="flex justify-evenly py-4 bg-white text-white w-[95%] shadow-lg">
+		<div className="sticky bottom-0 mx-auto w-[95%]">
+			<div className="flex justify-evenly py-4 bg-white text-white shadow-lg">
 				{menuItems.map((item, index) => (
 					<MenuItem
 						key={index}

@@ -1,10 +1,11 @@
 import Background from "../components/Background";
+import Search from "../components/Search";
 
 export default function Home() {
 	return (
-		<div>
-      
-			<Background title="Park Finder"/>
+		<div className="">
+			<Background title="Park Finder" />
+			<Search />
 		</div>
 	);
 }

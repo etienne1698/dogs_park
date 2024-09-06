@@ -3,10 +3,12 @@ import FooterMenu from "../components/Menu/FooterMenu";
 
 const Layout = () => {
 	return (
-		<>
-			<Outlet />
+		<div className="flex flex-col min-h-screen">
+			<div className="flex-grow">
+				<Outlet />
+			</div>
 			<FooterMenu />
-		</>
+		</div>
 	);
 };
 
