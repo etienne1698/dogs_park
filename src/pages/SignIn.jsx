@@ -35,7 +35,7 @@ function SignIn() {
             </div>
             <div className='flex space-x-2 mt-4'>
                 <span>Already have an Account?</span>
-                <Link to="/signin" className='text-orangeLink'>Sign Up</Link>
+                <Link to="/signup" className='text-orangeLink'>Sign Up</Link>
             </div>
         </div>
     </div>
